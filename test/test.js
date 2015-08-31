@@ -9,7 +9,7 @@ var test = function (input, output, opts) {
    expect(proccessed).to.eql(output);
 };
 
-describe('poxtxml-custom-tags', function () {
+describe('postxml-custom-tags', function () {
     it('replace custom tag with div', function () {
         test(
             '<custom></custom>',

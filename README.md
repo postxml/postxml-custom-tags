@@ -1,16 +1,16 @@
-# poxtxml-custom-tags
+# postxml-custom-tags
 [![npm version][npm-image]][npm-url]
 
 > [PostXML] plugin anable using custom tags in html. It replace them with div elements.
 
 ## Installation
-`npm i poxtxml-custom-tags --save-dev`
+`npm i postxml-custom-tags --save-dev`
 
 ## Usage
 ```js
 var fs = require('fs'),
    postxml = require('postxml'),
-   plugin = require('poxtxml-custom-tags');
+   plugin = require('postxml-custom-tags');
 
 var html = fs.readFileSync('input.html', 'utf8');
 
@@ -39,5 +39,5 @@ MIT
 
 [PostXML]: https://github.com/postxml/postxml
 
-[npm-url]: https://www.npmjs.org/package/poxtxml-custom-tags
-[npm-image]: http://img.shields.io/npm/v/poxtxml-custom-tags.svg?style=flat-square
+[npm-url]: https://www.npmjs.org/package/postxml-custom-tags
+[npm-image]: http://img.shields.io/npm/v/postxml-custom-tags.svg?style=flat-square

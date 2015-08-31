@@ -1,5 +1,5 @@
 {
-	"name": "poxtxml-custom-tags",
+	"name": "postxml-custom-tags",
 	"version": "0.1.0",
 	"description": "Postxml plugin anable using custom tags in html. It replace them with div elements.",
 	"main": "index.js",
@@ -18,7 +18,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/postxml/poxtxml-custom-tags.git"
+		"url": "git+https://github.com/postxml/postxml-custom-tags.git"
 	},
 	"keywords": [
 		"html",
@@ -32,7 +32,7 @@
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/postxml/poxtxml-custom-tags/issues"
+		"url": "https://github.com/postxml/postxml-custom-tags/issues"
 	},
-	"homepage": "https://github.com/postxml/poxtxml-custom-tags#readme"
+	"homepage": "https://github.com/postxml/postxml-custom-tags#readme"
 }
