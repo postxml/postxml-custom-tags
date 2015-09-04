@@ -8,11 +8,11 @@
 
 ## Usage
 ```js
-var fs = require('fs'),
-   postxml = require('postxml'),
-   plugin = require('postxml-custom-tags');
+var fs = require(fs),
+   postxml = require(postxml),
+   plugin = require(postxml-custom-tags);
 
-var html = fs.readFileSync('input.html', 'utf8');
+var html = fs.readFileSync(input.html, utf8);
 
 var output = postxml(
       html,
@@ -33,6 +33,67 @@ var output = postxml(
 ```html
 <div class="b-block" ng-click="init = 2">Text</div>
 ```
+
+## options
+
+#### src
+Type: `string`<br>
+Default: undefined<br>
+Description: set tag for replacement of tags with "src" (except `audio, frame, iframe, img, input, layer, script, textarea, video`)<br>
+Example:
+```js
+var fs = require(fs),
+   postxml = require(postxml),
+   plugin = require(postxml-custom-tags);
+
+var html = fs.readFileSync(input.html, utf8);
+
+var output = postxml(
+      html,
+      [
+         plugin({
+             src: 'img'
+         })
+      ]
+   );
+```
+```html
+/*Input*/
+<image src="image.png"></image>
+
+/*Output*/
+<img src="image.png">
+```
+
+#### href
+Type: `string`<br>
+Default: undefined<br>
+Description: set tag for replacement of tags with "href" (except `a, area, base, link`)<br>
+Example:
+```js
+var fs = require(fs),
+   postxml = require(postxml),
+   plugin = require(postxml-custom-tags);
+
+var html = fs.readFileSync(input.html, utf8);
+
+var output = postxml(
+      html,
+      [
+         plugin({
+             href: 'a'
+         })
+      ]
+   );
+```
+```html
+/*Input*/
+<div href="#"></div>
+
+/*Output*/
+<a href="#"></a>
+```
+
 
 ## Licence
 MIT
